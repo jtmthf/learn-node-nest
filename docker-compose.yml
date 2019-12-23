@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  postgres:
+    image: postgres:11.4-alpine
+    restart: always
+    environment:
+      POSTGRES_USER: learnnode
+      POSTGRES_PASSWORD: learnnode_password
+    ports:
+      - 5432:5432
+    volumes:
+      - postgres:/var/lib/postgresql/data
+  redis:
+    image: redis:5.0.5-alpine
+    restart: always
+    ports:
+      - 6379:6379
+
+volumes:
+  postgres: ~
