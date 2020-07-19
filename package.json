@@ -35,7 +35,7 @@
     "dotenv": "^8.0.0",
     "env-var": "^5.0.0",
     "express-session": "^1.16.2",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "nestjs-flub": "^0.1.0",
     "passport": "^0.4.0",
     "pg": "^7.12.0",
